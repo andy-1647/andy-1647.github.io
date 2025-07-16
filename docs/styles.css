@@ -14,8 +14,11 @@ body {
     flex-direction: row;
     
     max-width: 800px;
-    min-width: 308px;
+    min-width: 15rem;
+    align-content: center;
     justify-content: center;
+    vertical-align: auto;
+    align-items: center;
     flex-wrap: wrap;
 
     
@@ -23,13 +26,29 @@ body {
     
 }
 .targeta {
+    
     border: 1px solid red;
-    padding: 10px;
-    margin: auto;
+    padding: .1rem;
+    /* margin: auto; */
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+
+    
 
     /* white-space: 2px; */
 }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
 
 
 
