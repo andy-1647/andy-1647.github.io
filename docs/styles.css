@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.contenedor {
+    /* display: grid; */
+    gap: 1px;
+    display: flex;
+    flex-direction: row;
+    
+    max-width: 800px;
+    min-width: 308px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    
+
+    
+}
+.targeta {
+    border: 1px solid red;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+
+    /* white-space: 2px; */
+}
+
+
+
+
