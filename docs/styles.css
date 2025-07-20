@@ -1,3 +1,31 @@
+/*
+:root {
+    --color-principal: oklch(0.7 0.1 132.46);
+    --color-segundario: oklch(0.4933 0.1 311.82);
+    --color-oscuro: oklch(0.2221 0 163.44);
+    --color-claro: oklch(98% 0.005 240);  /* Casi blanco 
+
+     /* Uso de clamp() para tamaños de fuente responsivos que se ajustan automáticamente 
+           basados en el viewport sin necesidad de media queries 
+    --tamano-fuente-peq: clamp(0.8rem, 0.7rem + 0.5vw, 1rem);
+    --tamano-fuente-base: clamp(1rem, 0.9rem + 0.5vw, 1.25rem);
+    --tamano-fuente-grande: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
+    --tamano-fuente-xl: clamp(2rem, 1.8rem + 1vw, 3rem);
+
+    --espaciado-xs: clamp(0.5rem, 0.4rem + 0.5vw, 0.75rem);
+    --espaciado-peq: clamp(0.75rem, 0.65rem + 0.5vw, 1rem);
+    --espaciado-med: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+    --espaciado-grande: clamp(1.5rem, 1.4rem + 0.5vw, 2.5rem);
+    --espaciado-xl: clamp(2rem, 1.8rem + 1vw, 4rem);        
+}    */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -7,12 +35,68 @@ body {
     min-height: 100vh;
     padding: 20px;
 }
+.titulo {
+    
+    position: absolute;
+    top: 2rem;
+    display: flex;
+    text-align: center;
+    /* justify-content: center; */
+    font-size: 1rem;
+    margin-left: 1rem;
+    background-color: oklch(0.7 0.1 158.1);
+    padding: .4rem;
+    max-width: calc(100% - 5rem);
+}
+.titulo:hover{
+    background-color: color-mix(in srgb, oklch(0.7 0.1 158.1) 30%, oklch(0.7 0.1 185.88) 90%)
+}
+#navegacion{
+    background-color: oklch(0.7 0.1 158.1);
+    padding: .2rem;
+    position: absolute;
+    z-index: 50;
+    position: fixed;
+    top: 1px;
+    margin-bottom: -30px;
+    margin-right: 300px;
+    
+    /* margin-bottom: -30px; */
+}
+#navegacion:hover{
+    background-color: (in srgb, oklch(0.7 0.1 158.1) 30%, oklch(0.7 0.1 185.88) 90%)
+}
+.icono {
+    position: relative;
+    z-index: 5;
+}
+.enlaces {
+    display: none;
+
+}
+
+.visible{
+    display: block;
+    position: absolute;
+}
+
+a {
+
+    display: block;
+    /* position: absolute; */
+    max-width: 15px;
+    max-height: 2px;
+    margin: 15px;
+    padding: 20px;
+    background-color: aqua;
+    justify-content: space-between;
+}
+
 .contenedor {
     /* display: grid; */
     gap: 1px;
     display: flex;
     flex-direction: row;
-    
     max-width: 800px;
     min-width: 15rem;
     align-content: center;
@@ -20,6 +104,11 @@ body {
     vertical-align: auto;
     align-items: center;
     flex-wrap: wrap;
+    /* margin-top: 30px; */
+    position: relative;
+    top: 7rem;
+
+    
 
     
 
@@ -27,18 +116,13 @@ body {
 }
 .targeta {
     
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: .1rem;
-    /* margin: auto; */
+    /* margin: auto; */ 
     text-align: center;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-
-
-    
-
     /* white-space: 2px; */
 }
 img {
@@ -46,6 +130,17 @@ img {
     height: auto;
     display: block;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
