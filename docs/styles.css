@@ -36,7 +36,15 @@ body {
     
     position: absolute;
     top: .2rem;
-    left: clamp(3rem, 50%, 60%);
+    left: clamp(7rem, 100%, 31%);
+    position: fixed;
+    z-index: 50;
+    box-shadow: 0px 0px 6px color-mix(in srgb, oklch(0.5867 0.1 192.18) 15%, oklch(0.5867 0.1875 20.65) 60%);
+
+    
+    /* left: max(3.7rem, 3vw); */
+
+    
     display: flex;
     text-align: center;
     border-radius: 10px;
@@ -44,7 +52,7 @@ body {
     font-size: 1rem;
     /* margin-left: center; */
     background-color: oklch(0.7 0.1 158.1);
-    padding: .4rem;
+    padding: 1rem;
 
     /* max-width: calc(100% - 3rem); */
     /* margin-left: 15px; */
@@ -54,12 +62,12 @@ body {
 }
 #navegacion{
     background-color: oklch(0.7 0.1 158.1);
-    padding: 1.1rem;
+    color: aqua;
     border-radius: 10px;
     position: absolute;
     z-index: 50;
     position: fixed;
-    top: 1px;
+    top: .7rem;
     margin-bottom: -30px;
     margin-right: 300px;
     container-type: inline-size;
@@ -75,9 +83,8 @@ body {
     position: relative;
     z-index: 5;
     color: black;
-    
-
 }
+
 .enlaces {
     display: none;
 
@@ -147,7 +154,7 @@ a:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: 5rem;
     /* white-space: 2px; */
 }
 img {
