@@ -73,15 +73,10 @@ h1{
 
     }
     body{
+        max-height: fit-content;
+    }    
 
-        background: url("https://images.pexels.com/photos/547114/pexels-photo-547114.jpeg") center/cover;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        display: flex;
-        background-attachment: fixed;
-
-    }
+    
 }
 .seccion{
 
