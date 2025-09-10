@@ -63,12 +63,23 @@ h1{
         max-width: calc(100% - 1px);
         justify-content: center;
         align-items: center;
+
         /* align-items: center; */
 
     }
     div .targeta:nth-child(1){
         margin-top: 35rem;
 
+
+    }
+    body{
+
+        background: url("https://images.pexels.com/photos/547114/pexels-photo-547114.jpeg") center/cover;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        display: flex;
+        background-attachment: fixed;
 
     }
 }
