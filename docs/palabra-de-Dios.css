@@ -35,6 +35,7 @@
 h1{
     color: oklch(0.52 0.1702 315);
 }
+
 @property --color-fondo{
     syntax: "<color>";
     inherits: false;
@@ -51,10 +52,12 @@ h1{
     position: fixed;
     z-index: 200;
 }
-@media(max-width: 550px){
-    .contenedor-seccion{
+@media(max-width: 580px){
+    .contenedor-seccion a{
         display: none;
     }
+    
+
     .general{
         display: grid;
         flex-wrap: wrap;
@@ -73,9 +76,23 @@ h1{
 
     }
     
+    
 
     
 }
+@media(min-width: 600px){
+    .menu{
+        display: none;
+    }
+    div .seccion{
+        font-size: .5rem;
+        
+        margin-left: 20rem;
+        display: flex;
+        /* margin-right: auto; */
+    }
+}
+
 .seccion{
 
     background-color: var(--color-fondo);
