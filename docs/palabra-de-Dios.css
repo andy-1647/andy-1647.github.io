@@ -2,7 +2,7 @@
     position: relative;
     display: inline-block;
     top: 1rem;
-    margin-left: -14rem;
+    margin-left: 1rem;
     z-index: 300;
     position: fixed;
     
@@ -76,22 +76,36 @@ h1{
 
     }
     
+    div .seccion {
+        color: black;
+        text-align: center;
+        justify-content: center;
+        margin-left: 12rem;
+    }
+    
     
 
     
 }
-@media(min-width: 600px){
-    .menu{
+@media screen and (min-width: 590px){
+    div .menu{
         display: none;
     }
-    div .seccion{
-        font-size: .5rem;
-        
-        margin-left: 20rem;
-        display: flex;
-        /* margin-right: auto; */
-    }
+
 }
+/* @media screen and (min-width: 370px){ */
+    /* div .menu{ */
+
+        /* display: block; */
+        /* background: #007bff; */
+        /* color: white; */
+        /* padding: 10px; */
+        /* border: none; */
+        /* cursor: pointer; */
+    /* } */
+/* } */
+
+    
 
 .seccion{
 
@@ -108,7 +122,7 @@ h1{
     padding: 20px;
     margin-top: 90px;
     border-radius: 10px;
-    max-width: calc(100% - 20vw);
+    max-width: calc(70% - 20vw);
     position: fixed;
     z-index: 100;
 }
@@ -116,9 +130,11 @@ h1{
     background-color: oklch(0.52 0.1702 315);
     box-shadow: 1px .7px .9px .5px color-mix(in srgb, blue 50%, blueviolet 50%);
     border-radius: 10px;
-    font-size: 1.8rem;
-    max-width: calc(50% - 2vw);
+    font-size: 1.1rem;
+    max-width: calc(80% - 30%);
     top: auto;
+    padding: 15px;
+    text-align: center;
     
     margin: auto;
 
