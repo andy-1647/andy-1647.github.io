@@ -34,11 +34,12 @@ h1{
     align-items: center;
 }
 .header_baner_contenedor_targetas_targeta p{
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
-.header_baner_contenedor_targetas_targeta h1{
+.header_baner_contenedor_targetas_targeta h1, h2{
     margin-top: 0;
-    padding: .7rem;
+    padding: 1rem;
+    font-size: 1rem;
 }
 .main_principal{
     background-color: rgb(2, 74, 87);
