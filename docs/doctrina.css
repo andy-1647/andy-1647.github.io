@@ -82,6 +82,10 @@ h1{
     border: 1px solid blue;
 }
 .main_principal_article_section_contenedor_targetas_targeta{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
     width: 250px;
     /* padding: 2rem; */
     height: 450px;
