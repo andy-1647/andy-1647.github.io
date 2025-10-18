@@ -3,165 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basados en la Bíblia</title>
-    <link rel="stylesheet" href="palabra-de-Dios.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Col Aseo</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <style>
+    #bienvenida {
+      display: none;
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #f0f8ff;
+      color: #333;
+      padding: 20px;
+      border: 2px solid #0077cc;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+      font-family: Arial, sans-serif;
+    }
+  </style>
 </head>
 <body>
-
-    <header class="header">
-        <nav class="nav_navegacion">
-
-            <div class="h1_icono">
-                <h1>Basados en la Biblia</h1>
-                <i class="fa-solid fa-heart icono"></i>
+    <div class="contenedor_principal">
+        <header class="cabecera">
+            <div class="logo">
+                <i>Col Aseo</i>
             </div>
-
-            <div class="contenedor_enlaces">
-                <a href="doctrina.html">Puntos de Doctrina</a> |
-                <a href="10versiculos_poderosos.html">10 verciculos poderosos</a>|
-                <a href="señales_antes_del_fin.html">Señales antes del fin</a>|
-                <a href="nosotros.html">Quienes somos</a>|
-                <a href="contactar.html">Contactar</a>|
-                <a href="nosotros.html">Quienes somos</a>|
-                <a href="contactar.html">Contactar</a>|
+            <div class="enlaces_nav">
+                <a href="productos.html">Productos</a>
+                <a href="#contactar" >Contactar</a>
+                <a href="sobre_nosotros.html">Nosotros</a>
+                <a href="sobre_nosotros.html">Combos</a>
             </div>
-        </nav>
-    </header>
+        </header>
 
-    <article class="principal">
-        <section class="secion_targetas">
-            <h2>Mensajes Biblicos</h2>
-            <div class="contenedor_targeta">
-                <div class="targeta">
-                    <div>
-                        <img>
-                        <h3>Proverbios 1:7</h3>
-                        <p>El principio de la sabiduría es el temor de Jehová, los insensatos desprecian la sabiduría y la ensenñanza</p>
-                    </div>
-                </div>
-                <div class="targeta">
-                    <div>
-                        <img>
-                        <h3>Éxodo 14:14</h3>
-                        <p>Jehová peleará por vosotros y vosotros, estaréis tranquilos.</p>
-                    </div>
-                </div>
-                <div class="targeta">
-                    <div>
-                        <img>
-                        <h3>San Mateo 5:3</h3>
-                        <p>Bienaventurados los pobres en espíritu, porque de ello es el reino de los cielos.</p>
-                    </div>
-                </div>
-                <div class="targeta">
-                    <div>
-                        <img>
-                        <h3>San Marcos 1:14</h3>
-                        <p>Después que Juan fue encarcelado Jesús vino a Galilea predicando el evangelio del reino de Dios,</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </article>
+        <main class="main_pagina">
+            <h1>Col Aseo Mejores productos</h1>
 
-    <article class="article_fotos">
-            <div class="contenedor_fotos">
+            <section class="contenedor_general_de_productos">
 
-                <div class="caja">
-                    <img src="https://images.pexels.com/photos/31729026/pexels-photo-31729026.jpeg" class="icono" target="_blank" rel="noopener" rel="no-referrer" rel="nofollow " referrerpolicy="no-referrer">
-                    <h3>Apocalipsis 3:20</h3>
-                    <p>He aquí yo estoy a la puerta y llamo; si alguno oye mi voz y abre la puerta entraré a él senaré con él y él con migo</p>
+                
+                <article class="card_producto">
+                    <img src="ESCOBA-ZAMORA-PLUS.png">
+                    <h3>Escoba Zamora plus<div class="box-button"><a href="#myModal">Ver mas</a></div></h3>
+                    <p>Este producto es el mejor</p>
+                </article>
 
-                </div>
-                <div class="caja">
-                    <img src="https://images.pexels.com/photos/17311818/pexels-photo-17311818.jpeg" class="icono" target="_blank" rel="noopener" rel="no-referrer" rel="nofollow " referrerpolicy="no-referrer">
-                    <h3>San Marcos 16: 16</h3>
-                    <p>El que creyere y fuere bautizado será salvo más el que no creyere será condenado</p>
-                </div>
-                <div class="caja">
-                    <img src="https://images.pexels.com/photos/726123/pexels-photo-726123.jpeg" class="icono" target="_blank" rel="noopener" rel="no-referrer" rel="nofollow " referrerpolicy="no-referrer">
-                    <h3>Salmos 23:1</h3>
-                    <p>Jehová es mi pastor nada me faltará</p>
-                </div>
-                <div class="caja">
-                    <img src="https://images.pexels.com/photos/3773246/pexels-photo-3773246.jpeg" class="icono" target="_blank" rel="noopener" rel="no-referrer" rel="nofollow " referrerpolicy="no-referrer">
-                    <h3>2 Reyes 6:6</h3>
-                    <p>El varón de Dios preguntó: ¿Dónde cayó? Y él le mostró el lugar. Entonses cortó él un palo, y lo hechó allí; e hizo flotar el hierro.</p>
-                </div>
-                <div class="caja">
-                    <img src="https://images.pexels.com/photos/339805/pexels-photo-339805.jpeg" class="icono" target="_blank" rel="noopener" rel="no-referrer" rel="nofollow " referrerpolicy="no-referrer">
-                    <h3>Hebreos 4:12</h3>
-                    <p>Porque la palabra de Dios es viva y eficaz, y más cortante que toda espada de dos filos; </p>
-                </div>
-                <div class="caja">
-                    <img src="https://images.pexels.com/photos/1112048/pexels-photo-1112048.jpeg" class="icono" target="_blank" rel="noopener" rel="no-referrer" rel="nofollow " referrerpolicy="no-referrer">
-                    <h3>San Juan 5:39</h3>
-                    <p>Escudriñad las Escrituras; por que a vosotros os parece que en ellas tenéis la vida eterna; y ellas son las que dan testimonio de mí;</p>
-                </div>
-                <div class="caja">
-                    <img src="https://images.pexels.com/photos/41953/earth-blue-planet-globe-planet-41953.jpeg" class="icono" target="_blank" rel="noopener" rel="no-referrer" rel="nofollow " referrerpolicy="no-referrer">
-                    <h3>San Juan 1:10</h3>
-                    <p>En el mundo estaba, y el mundo por él fue hecho; pero el mundo no le conoció.</p>
-                </div>
-                <div class="caja">
-                    <img src="https://images.pexels.com/photos/462162/pexels-photo-462162.jpeg" class="icono" target="_blank" rel="noopener" rel="no-referrer" rel="nofollow " referrerpolicy="no-referrer">
-                    <h3>Dios es bueno</h3>
-                    <p>Dios es la roca de nuestra salvacion</p>
-                </div>
-                <div class="caja">
-                    <img src="https://images.pexels.com/photos/751676/pexels-photo-751676.jpeg" class="icono" target="_blank" rel="noopener" rel="no-referrer" rel="nofollow " referrerpolicy="no-referrer">
-                    <h3>2 Corintios 11:3</h3>
-                    <p>Pero temo que como la serpiente con su astucia engaño a Eva,</p>
-                </div>
-                <div class="caja">
-                    <img src="https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg" class="icono" target="_blank" rel="noopener" rel="no-referrer" rel="nofollow " referrerpolicy="no-referrer">
-                    <h3>Cristo viene cerca</h3>
-                    <p>Muy serca está la venida de Dios en la nube blanca</p>
-                </div>
-            </div>
-        </section>
-    </article>
+                <article class="card_producto">
+                    <img src="IMG20251011205405.png">
+                    <h3>Balde esprimidor <div class="box-button"><a href="#myModal2">Ver mas</a></div></h3>
+                    <p>Este producto es el mejor</p>
+                </article>
 
+                <article class="card_producto">
+                    <img src="IMG20251011205405.png">
+                    <h3>Balde esprimidor</h3>
+                    <p>Este producto es el mejor</p>
+                </article>
 
+                    
 
+                <article class="card_producto">
+                    <img src="IMG20251011203807.png">
+                    <h3>Balde esprimidor</h3>
+                    <p>Este producto es el mejor</p>
+                </article>
 
+                <article class="card_producto">
+                    <img src="IMG20251011195557.png">
+                    <h3>Balde esprimidor</h3>
+                    <p>Este producto es el mejor</p>
+                </article>
 
+                 <article class="card_producto">
+                    <img src="IMG20251004094830 - copia (2).jpg">
+                    <h3>Balde esprimidor</h3>
+                    <p>Este producto es el mejor</p>
+                </article>
 
+                <article class="card_producto">
+                    <img src="IMG20251011204237 (1).png">
+                    <h3>Balde esprimidor</h3>
+                    <p>Este producto es el mejor</p>
+                </article>
 
-    <aside class="contenido_lateral">
-        <div class="lateral_div">
-            <h3 class="elh3 item">Alimento espiritual</h3>
-            <p class="elp item">Jesús es el pan de vida eterna</p>
-        </div>
-    </aside>
+                <article class="card_producto">
+                    <img src="IMG20251011220749.png">
+                    <h3>Balde esprimidor</h3>
+                    <p>Este producto es el mejor</p>
+                </article>
 
-    <footer class="footer">
+            </section>
 
-        <div class="pie_de_pagina">
-            <h3>Soy el footer de esta app</h3>
-            <p>Copyry - Todos los derechos reservados</p>
-            <p><a href="#">Conoce nuestra politica de privacidad</a></p>
-            <p><a href="https://wa.me/+573223683214" class="icono" target="_blank" rel="noopener" rel="no-referrer" rel="nofollow " referrerpolicy="no-referrer"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #08d99a;"></i><br><br>Contactar</a></p>
-            
-            <h3>Soy el footer de esta app</h3>
-            <p>Copyry - Todos los derechos reservados</p>
-            <p><a href="#">Conoce nuestra politica de privacidad</a></p>
-            <p><A href="#">Contactar</A></p>
-        </div>
-        <div class="pie_de_pagina">
-            <h3>Soy el footer de esta app</h3>
-            <p>Copyry - Todos los derechos reservados</p>
-            <p><a href="terminosycondicioes.html" download="">descargar terminos y condiciones</a></p>
-            <p><A href="#">Contactar</A></p>
-            
-            <h3>Soy el footer de esta app</h3>
-            <p>Copyry - Todos los derechos reservados</p>
-            <p><a href="#">Conoce nuestra politica de privacidad</a></p>
-            <p><A href="#">Contactar</A></p>
-        </div>
-    </footer>
+            <section class="secion_form" id="contactar" class="click">
+                <h2>Contactar empresa</h2>
+                <form action="https://formsubmit.co/19738fb129183821e46e28ae7802acc0" method="POST">
+                    <input type="text" name="nombre" required placeholder="Tu nombre" class="campo">
+                    <input type="text"  name="apellido" required placeholder="Apellido" class="campo">
+                    <input type="number" name="cel" required placeholder="numero cel" class="campo">
+                    <input type="email" name="email" required placeholder="Tu email" class="campo"> 
+                    <textarea name="asunto" class="asunto">Mensaje</textarea>
+                    <button type="submit" class="enviar">Enviar</button>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </section>
+        </main>
         
+        <footer>
+            <h4>Esperamos averte ayudado muchas gracias por elegirnos</h4>
+            <h4>Esperamos averte ayudado muchas gracias por elegirnos</h4>
+            <h4>Esperamos averte ayudado muchas gracias por elegirnos</h4>
+            <h4>Esperamos averte ayudado muchas gracias por elegirnos</h4>
+            
+           <div id="myModal" class="modal">
+            <div class="modalContent">
+
+                <div class="close-btn">
+                    <a class="modal_close" href="">&times;</a>
+                </div>
+                <h2>Zamora</h2>
+                <!-- <p>Escoba super suabe muy util para baldosas ya que es de alta calidad</p> -->
+                <div class="modal-img">
+                    <img src="ESCOBA-ZAMORA-PLUS.png">
+                    <h2>Escoba zamora plus</h2>
+                    <p>Especificaciones del producto:<br>
+                        1.Escoba suave si<br>
+                        2.Fibra fina si<br>
+                        3.Duradera si
+                    </p>
+                    <h2>Contactar</h2>
+                    <form action="https://formsubmit.co/19738fb129183821e46e28ae7802acc0" method="POST">
+                    <input type="text" name="nombre" required placeholder="Tu nombre" class="campo">
+                    <input type="text"  name="apellido" required placeholder="Apellido" class="campo">
+                    <input type="number" name="cel" required placeholder="numero cel" class="campo">
+                    <input type="email" name="email" required placeholder="Tu email" class="campo"> 
+                    <textarea name="asunto" class="asunto">Mensaje</textarea>
+                    <button type="submit" class="enviar">Enviar</button>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ox7WSYmAm5A?si=QiOeKTm1rZEMhERk&amp;start=13" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+                </div>
+            </div>
+           </div>
+
+
+
+
+           <div id="myModal2" class="modal">
+            <div class="modalContent">
+
+                <div class="close-btn">
+                    <a class="modal_close" href="">&times;</a>
+                </div>
+                <h2>Zamora</h2>
+                <!-- <p>Escoba super suabe muy util para baldosas ya que es de alta calidad</p> -->
+                <div class="modal-img">
+                    <img src="IMG20251011205405.png">
+                    <h2>Escoba zamora plus</h2>
+                    <p>Especificaciones del producto:<br>
+                        1.Escoba suave si<br>
+                        2.Fibra fina si<br>
+                        3.Duradera si
+                    </p>
+                    <h2>Contactar</h2>
+                    <form action="https://formsubmit.co/19738fb129183821e46e28ae7802acc0" method="POST">
+                    <input type="text" name="nombre" required placeholder="Tu nombre" class="campo">
+                    <input type="text"  name="apellido" required placeholder="Apellido" class="campo">
+                    <input type="number" name="cel" required placeholder="numero cel" class="campo">
+                    <input type="email" name="email" required placeholder="Tu email" class="campo"> 
+                    <textarea name="asunto" class="asunto">Mensaje</textarea>
+                    <button type="submit" class="enviar">Enviar</button>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ox7WSYmAm5A?si=QiOeKTm1rZEMhERk&amp;start=13" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+                </div>
+            </div>
+           </div>
+        </footer>
+    
+    
+    </div>
+
+    <script src="scripts.js"></script>
+     <div id="bienvenida">¡Bienvenido a Col Aseo! Gracias por visitarnos.</div>
+
+  <script>
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        const mensaje = document.getElementById('bienvenida');
+        mensaje.style.display = 'block';
+
+        setTimeout(function() {
+          mensaje.style.display = 'none';
+        }, 5000); // El mensaje se oculta después de 5 segundos
+      }, 10000); // El mensaje aparece después de 10 segundos
+    });
+  </script>
     
 </body>
 </html>
