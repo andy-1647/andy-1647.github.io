@@ -316,12 +316,17 @@ form .campo{
 
 
 footer{
-    background-color: black;
+    background-color: #0A0A0A;
     padding: 20px;
     height: 50%;
     margin-top: 1rem;
+    display: grid;
+    /* grid-auto-rows: 1rem; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* gap: 1rem; */
+    /* grid-auto-flow: dense; */
 }
-footer h4{
+footer h6{
     color: white;
     padding: 15px;
     
