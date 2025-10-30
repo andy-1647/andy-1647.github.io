@@ -5,9 +5,9 @@ body{
     right: 0;
     background-color: #fff;
     display: flex;
-    /* display: grid; */
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+    width: 100%;
     /* grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); */
 }
 
@@ -17,19 +17,23 @@ body{
     width: 100%;
     /* display: grid; */
     /* grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); */
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 .cabecera{
     /* background-color: #efefef; */
     background-color: #00008B;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    padding-top: 17px;
+    padding-bottom: 30px;
+    justify-content: center;
+    align-items: center;
     height: 1.4cm;
     justify-content: space-evenly;
 
-    padding: 1rem;
-    width: 97.5%;
+    /* padding: .3rem .2rem; */
+    /* width: 100%; */
 
     animation: entrarDesdeArriba .8s ease;
     
@@ -101,6 +105,7 @@ main h1{
     /* display: flex; */
     /* flex-direction: row; */
     /* flex-wrap: wrap; */
+    /* color: 1px solid blue; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
@@ -321,19 +326,14 @@ form .campo{
         
     }
 }
-@media(min-width: 1280px){ /*Para conputadores*/
-    .contenedor_general_de_productos{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        
+
+@media(min-width: 400%) and (min-width: 600%){/*Para celulares*/
+    .cabecera{
+        width: 70%;
     }
-}
-/* @media(min-width: 400%) and (min-width: 600%){Para celulares */
-    /* .cabecera{ */
-        /* width: 70%; */
-    /* } */
     
 
-/* } */
+}
 
 
 
