@@ -52,11 +52,11 @@ i{
     opacity: 1;
     font-size: 1rem;
 
-    opacity: 0;
-    animation-name: aparicion;
-    animation-duration: 2.3s;
-    animation-delay: o.5s;
-    animation-fill-mode: forwards;
+    /* opacity: 0; */
+    /* animation-name: aparicion; */
+    /* animation-duration: 2.3s; */
+    /* animation-delay: o.5s; */
+    /* animation-fill-mode: forwards; */
 }
 /* .logo{ */
     /* padding: 1rem; */
@@ -93,11 +93,11 @@ main h1{
     color: white;
     font-size: 1rem;
 
-    opacity: 0;
-    animation-name: aparicion;
-    animation-duration: 2.5s;
-    animation-delay: o.2s;
-    animation-fill-mode: forwards;
+    /* opacity: 0; */
+    /* animation-name: aparicion; */
+    /* animation-duration: 2.5s; */
+    /* animation-delay: o.2s; */
+    /* animation-fill-mode: forwards; */
 
 }
 .contenedor_general_de_productos{
