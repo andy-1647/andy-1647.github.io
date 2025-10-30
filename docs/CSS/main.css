@@ -64,11 +64,11 @@ i{
 .enlaces_nav{
     padding: 1.2rem;
     /* width: 300px; */
-    opacity: 0;
-    animation-name: aparicion;
-    animation-duration: 3s;
-    animation-delay: o.2s;
-    animation-fill-mode: forwards;
+    /* opacity: 0; */
+    /* animation-name: aparicion; */
+    /* animation-duration: 3s; */
+    /* animation-delay: o.2s; */
+    /* animation-fill-mode: forwards; */
     
 }
 .main_pagina{
