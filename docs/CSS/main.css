@@ -30,7 +30,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 1.4cm;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 
     /* padding: .3rem .2rem; */
     /* width: 100%; */
@@ -374,16 +374,16 @@ footer h6{
         transform: translateY(0);
     }
 }
-
+ 
 
 @keyframes aparicion{
     0%{
         opacity: 0;
         transform: scale(2)  translateY(75px);
     }
-    /* 5%{ */
-        /* transform: scale(3)  translateX(3px); */
-    /* } */
+    5%{
+        transform: scale(3)  translateX(3px);
+    }
     100%{
         opacity: 1;
         transform: scale(1) translateY(0);
