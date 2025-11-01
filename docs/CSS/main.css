@@ -124,7 +124,7 @@ main h1{
 
     /* opacity: 0; */
     animation-name: entrarDesdeIzq;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
     animation-delay: o.2s;
     animation-fill-mode: forwards;
     
