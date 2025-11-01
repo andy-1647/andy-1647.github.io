@@ -46,6 +46,12 @@ body{
 .cabecera a{
     /* opacity: .9; */
     /* background-color: seagreen; */
+    background-color: seagreen;
+    opacity: 0;
+    animation-name: aparicion;
+    animation-duration: 3s;
+    animation-delay: o.2s;
+    animation-fill-mode: forwards
 }
 i{
     color: aqua;
@@ -367,7 +373,7 @@ footer h6{
         transform: translateY(0);
     }
 }
- 
+*/
 
 @keyframes aparicion{
     0%{
@@ -382,7 +388,7 @@ footer h6{
         transform: scale(1) translateY(0);
     }
 }
-*/
+
 
 
 h3 div a{
