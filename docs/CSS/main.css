@@ -130,6 +130,13 @@ main h1{
     
     
 }
+#contactar{
+    animation-name:  entrarDesdeArriba;
+    animation-duration: 1.4s;
+    animation-delay: o.1s;
+    animation-fill-mode: forwards;
+    
+}
 
 
 .card_producto{
@@ -362,7 +369,7 @@ footer h6{
     }
 
 }
-/*
+
 @keyframes entrarDesdeArriba {
     from{
         transform: translateY(-200%);
@@ -371,7 +378,7 @@ footer h6{
         transform: translateY(0);
     }
 }
-*/
+
 
 @keyframes aparicion{
     0%{
