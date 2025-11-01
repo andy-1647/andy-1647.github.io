@@ -31,7 +31,7 @@ body{
     /* justify-content: center; */
     align-items: center;
     height: 1.4cm;
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
 
     /* padding: .3rem .2rem; */
     width: 100%;
