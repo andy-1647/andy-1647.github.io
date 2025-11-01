@@ -23,17 +23,18 @@ body{
 .cabecera{
     /* background-color: #efefef; */
     background-color: #00008B;
-    display: grid;
+    /* display: grid; */
     /* grid-template-columns: 1fr 1fr; */
+    display: flex;
     padding-top: 17px;
     padding-bottom: 30px;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     height: 1.4cm;
     /* justify-content: space-evenly; */
 
     /* padding: .3rem .2rem; */
-    /* width: 100%; */
+    width: 100%;
 
     /* animation: entrarDesdeArriba .8s ease; */
     
