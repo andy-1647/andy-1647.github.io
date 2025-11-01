@@ -46,7 +46,6 @@ body{
 .cabecera a{
     /* opacity: .9; */
     /* background-color: seagreen; */
-    background-color: seagreen;
     opacity: 0;
     animation-name: aparicion;
     animation-duration: 3s;
