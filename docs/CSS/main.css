@@ -123,10 +123,10 @@ main h1{
     container-name: contenedor_productos;
 
     /* opacity: 0; */
-    /* animation-name: aparicion; */
-    /* animation-duration: 2.5s; */
-    /* animation-delay: o.2s; */
-    /* animation-fill-mode: forwards; */
+    animation-name: entrarDesdeIzq;
+    animation-duration: 2.5s;
+    animation-delay: o.2s;
+    animation-fill-mode: forwards;
     
     
 }
@@ -352,7 +352,7 @@ footer h6{
     
 }
 
-/*
+
 @keyframes entrarDesdeIzq{
     from{
         transform: translateX(-200%);
@@ -362,6 +362,7 @@ footer h6{
     }
 
 }
+/*
 @keyframes entrarDesdeArriba {
     from{
         transform: translateY(-200%);
