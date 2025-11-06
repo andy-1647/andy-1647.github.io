@@ -319,6 +319,8 @@ form .campo{
       border-radius: 5px;
       text-align: center;
       font-weight: bold;
+      max-width: 800px;
+    
 }
 
 
