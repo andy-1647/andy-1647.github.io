@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Empresa de Aseo</title>
+  <style>
+    :root {
+      --primary-color: #27ae60;
+      --primary-dark: #219150;
+      --overlay-color: rgba(0,0,0,0.6);
+      --white: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: var(--white);
+    }
+
+    .contact-section {
+      position: relative;
+      background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: var(--overlay-color);
+      z-index: 1;
+    }
+
+    .contact-content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      padding: 40px;
+      border-radius: 12px;
+      backdrop-filter: blur(6px);
+      background: rgba(255,255,255,0.1);
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1s ease;
+    }
+
+    .contact-content.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .contact-content h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { color: var(--primary-color); }
+      50% { color: var(--primary-dark); }
+      100% { color: var(--primary-color); }
+    }
+
+    .contact-info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .contact-card {
+      background: rgba(0,0,0,0.4);
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      cursor: pointer;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-8px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .contact-card h3 {
+      margin-bottom: 10px;
+      color: var(--primary-color);
+    }
+
+    .contact-card p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="contact-section" id="contact">
+    <div class="overlay"></div>
+    <div class="contact-content">
+      <h2>📞 Contáctanos</h2>
+      <div class="contact-info">
+        <div class="contact-card">
+          <h3>Teléfono</h3>
+          <p>+57 (6) 123 4567</p>
+        </div>
+        <div class="contact-card">
+          <h3>Correo electrónico</h3>
+          <p>ventas@empresaaseo.com</p>
+        </div>
+        <div class="contact-card">
+          <h3>Dirección</h3>
+          <p>Calle 10 #15-20, Armenia, Quindío</p>
+        </div>
+        <div class="contact-card">
+          <h3>Horario</h3>
+          <p>Lunes a viernes<br>8:00 a.m. - 6:00 p.m.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Animación al cargar la sección
+    document.addEventListener("DOMContentLoaded", () => {
+      const content = document.querySelector(".contact-content");
+      setTimeout(() => {
+        content.classList.add("visible");
+      }, 500);
+    });
+  </script>
+
+</body>
+</html>
