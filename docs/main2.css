@@ -92,9 +92,9 @@ ul{
     /* background-color: aliceblue; */
 
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     /* justify-content: space-between; */
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
     /* justify-content: flex-end; */
     gap: 15px;
     /* justify-content: first baseline; */
