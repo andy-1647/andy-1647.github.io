@@ -3,483 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mundo Aseo</title>
-    <link rel="stylesheet" href="CSS/main.css">
+    <title>UI</title>
+    <link rel="stylesheet" href="main2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <div class="contenedor_principal">
-        <header class="cabecera">
-            <div class="logo">
-                <i>Mundo Aseo</i>
-            </div>
-            <div class="enlaces_nav">
-                <a href="index.html">Inicio</a>
-                <a href="#contactar" >Contactar</a>
-                <a href="Historia.html">Historia</a>
-                <a href="productos.html">product</a>
-            </div>
-        </header>
-        <main class="main_pagina">
-            <h1>Mundo Aseo Mejores productos</h1>
+<body> 
+    <header>
+        <div>
+            <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i>facebook</a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i>Instagran</a>
+            <a href="https://www.youtube.com"> <i class="fa-brands fa-youtube"></i>Youtube</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="##"><i class="fa-regular fa-house"></i>Inicio</a></li>
+                <!-- <li><a href="##"><i class="fa-solid fa-users"></i>Nosotros</a></li> -->
+                <li><a href="mainServicios.html"><i class="fa-solid fa-suitcase"></i>Servicios</a></li>
+                <!-- <li><a href="##"><i class="fa-solid fa-briefcase"></i>Portafolio</a></li> -->
+                <li><a href="mainContacto.html"><i class="fa-solid fa-briefcase"></i>Contacto</a></li>
 
-            <section class="contenedor_general_de_productos">
 
-                
-                <article class="card_producto">
-                    <img src="ESCOBA-ZAMORA-PLUS.png">
-                    <h3>Escoba Zamora plus<div class="box-button"><a href="#myModal">Ver mas</a></div></h3>
-                    <p>Este producto es el mejor</p>
-                </article>
+            </ul>
+        </nav>
+    </header>
+    <div class="carrusel">
+    <div class="pista">
+      <div class="slide">
+        <img src="IMG20251011195557.png" alt="Imagen 1">
+        <div class="texto-slide">Trapero mopa</div>
+      </div>
+      <div class="slide">
+        <img src="IMG20251011195557.png" alt="Imagen 2">
+        <div class="texto-slide">Trapero mopa</div>
+      </div>
+      <div class="slide">
+        <img src="IMG20251011195557.png" alt="Imagen 3">
+        <div class="texto-slide">Trapero mopa</div>
+      </div>
+      <div class="slide">
+        <img src="IMG20251011195557.png" alt="Imagen 4">
+        <div class="texto-slide">Trapero mopa</div>
+      </div>
+      <div class="slide">
+        <img src="IMG20251011195557.png" alt="Imagen 5">
+        <div class="texto-slide">Trapero mopa</div>
+      </div>
+      <!-- Puedes seguir agregando más slides con texto -->
+    </div>
+    <button class="boton-carrusel anterior">&#10094;</button> 
+    <button class="boton-carrusel siguiente">&#10095;</button>
+  </div>
+  <div class="vacio"></div>
+  
 
-                <article class="card_producto">
-                    <img src="IMG20251011205405.png">
-                    <h3>Escoba w<div class="box-button"><a href="#myModal2">Ver mas</a></div></h3>
-                    <p>La escoba w es de alta calidad</p>
-                </article>
-
-                <article class="card_producto">
-                    <img src="IMG20251011205405.png">
-                    <h3>Escoba w <div class="box-button"><a href="#myModal3">Ver mas</a></div></h3>
-                    <p>Este producto es el mejor</p>
-                </article>
-
-                    
-
-                <article class="card_producto">
-                    <img src="IMG20251011203807.png">
-                    <h3>Trapero de micro fibra <div class="box-button"><a href="#myModal4">Ver mas</a></div></h3>
-                    <p>Trapero de micro fibra</p>
-                </article>
-
-                <article class="card_producto">
-                    <img src="IMG20251011195557.png">
-                    <h3>Trapero magico <div class="box-button"><a href="#myModal5">Ver mas</a></div></h3>
-                    <p>Este es el trapero magico</p>
-                </article>
-
-                 <article class="card_producto">
-                    <img src="IMG20251004094830 - copia (2).jpg">
-                    <h3>Balde esprimidor <div class="box-button"><a href="#myModal6">Ver mas</a></div></h3>
-                    <p>Este producto es el mejor</p>
-                </article>
-
-                <article class="card_producto">
-                    <img src="IMG20251011204237 (1).png">
-                    <h3>Abana <div class="box-button"><a href="#myModal7">Ver mas</a></div></h3>
-                    <p>Esta es la escoba abana</p>
-                </article>
-
-                <article class="card_producto">
-                    <img src="IMG20251011220749.png">
-                    <h3>Plumero de micro fibra <div class="box-button"><a href="#myModal8">Ver mas</a></div></h3>
-                    <p>Plumero micri Fibra para quitar polvo</p>
-                </article>
-
-            </section>
-
-            <section class="secion_form" id="contactar" class="click">
-                <h2>Contactar empresa</h2>
-                <form action="https://formsubmit.co/cati7az@gmail.com" method="POST">
-                    <input type="text" name="nombre" required placeholder="Tu nombre" class="campo">
-                    <input type="text"  name="apellido" required placeholder="Apellido" class="campo">
-                    <input type="number" name="cel" required placeholder="numero cel" class="campo">
-                    <input type="email" name="email" required placeholder="Tu email" class="campo"> 
-                    <textarea name="asunto" class="asunto">Mensaje</textarea>
-                    <button type="submit" class="enviar">Enviar</button>
-                    <input type="hidden" name="_next" value="https://andy-1647.github.io">
-                    <input type="hidden" name="_captcha" value="false">
-                </form>
-                 <div id="successMessage" class="success-message">
-                  ¡Mensaje enviado exitosamente!
-                 </div>
-
-            </section>
-
-        </main>
-        
-        <footer>
-            <h6>Todos los derechos reservados - Mundo Aseo 2025</h6>
-            <h6>Copyright  -  Todos los derechos reservados Mundo Aseo</h6>
-            <h6>Gracias por elegirnos</h6>
-            <h6>Distintos articulos para el Aseo</h6>
+    <main>
+      <h1 class="nombreh1">Mundo Aseo</h1>
+      <h2 class="nombreh2">Catalogo</h2>
+        <section class="catalogo">
+            <article>
+                <img src="IMG20251011181836.png">
+                <h3>Plumero</h3>
+                <p>Conoce nuestro plumero de alta calidad dfdfdf fdfdfd</p>
+                <button>Ver mas</button>
+            </article>
+             <article>
+                <img src="IMG20251011181836.png">
+                <h3>Plumero</h3>
+                <p>Conoce nuestro plumero de alta calidad</p>
+                <button>Ver mas</button>
+            </article>
+             <article>
+                <img src="IMG20251011181836.png">
+                <h3>Plumero</h3>
+                <p>Conoce nuestro plumero de alta calidad</p>
+                <button>Ver mas</button>
+            </article>
+             <article>
+                <img src="IMG20251011181836.png">
+                <h3>Plumero</h3>
+                <p>Conoce nuestro plumero de alta calidad</p>
+                <button>Ver mas</button>
+            </article>
+             <article>
+                <img src="IMG20251011181836.png">
+                <h3>Plumero</h3>
+                <p>Conoce nuestro plumero de alta calidad</p>
+                <button>Ver mas</button>
+            </article>
+             <article>
+                <img src="IMG20251011181836.png">
+                <h3>Plumero</h3>
+                <p>Conoce nuestro plumero de alta calidad</p>
+                <button>Ver mas</button>
+            </article>
+             <article>
+                <img src="IMG20251011181836.png">
+                <h3>Plumero</h3>
+                <p>Conoce nuestro plumero de alta calidad</p>
+                <button>Ver mas</button>
+            </article>
+             <article>
+                <img src="IMG20251011181836.png">
+                <h3>Plumero</h3>
+                <p>Conoce nuestro plumero de alta calidad</p>
+                <button>Ver mas</button>
+            </article>
+             <article>
+                <img src="IMG20251011181836.png">
+                <h3>Plumero</h3>
+                <p>Conoce nuestro plumero de alta calidad</p>
+                <button>Ver mas</button>
+            </article>
             
-           <div id="myModal" class="modal">
-            <div class="modalContent">
 
-                <div class="close-btn">
-                    <a class="modal_close" href="">&times;</a>
-                </div>
-                <h2>Zamora</h2>
-                <!-- <p>Escoba super suabe muy util para baldosas ya que es de alta calidad</p> -->
-                <div class="modal-img">
-                    <img src="ESCOBA-ZAMORA-PLUS.png">
-                    <h2>Escoba zamora plus</h2>
-                    <p>Especificaciones del producto:<br>
-                        1.Escoba suave si<br>
-                        2.Fibra fina si<br>
-                        3.Duradera si
-                    </p>
-                    <h2>Contactar</h2>
-                    <form action="https://formsubmit.co/andyme1647@gmail.com" method="POST">
-                    <input type="text" name="nombre" required placeholder="Tu nombre" class="campo">
-                    <input type="text"  name="apellido" required placeholder="Apellido" class="campo">
-                    <input type="number" name="cel" required placeholder="numero cel" class="campo">
-                    <input type="email" name="email" required placeholder="Tu email" class="campo"> 
-                    <textarea name="asunto" class="asunto">Mensaje</textarea>
-                    <button type="submit" class="enviar">Enviar</button>
-                    <input type="hidden" name="_next" value="https://andy-1647.github.io/">
-                    <input type="hidden" name="_captcha" value="false">
-                </form>
-                    
-                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ox7WSYmAm5A?si=QiOeKTm1rZEMhERk&amp;start=13" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-                </div>
+        </section>
+    </main>
+    <h2 class="servicios">Servicios</h2>
+    <div class="contenedor-abuelo">
+      
+
+      
+      <div class="contenedor-grande">
+        <h2>Contenedor grande</h2>
+        <div class="contenedor-targeta">
+          <div class="targeta">
+            <img  class="img" src="https://images.pexels.com/photos/28593792/pexels-photo-28593792.jpeg">
+            <div class="hermano-img">
+              <div>
+                <h3 class="title-h3">La foto del niño</h3>
+                <p class="p-img">Una foto de un niño que ele gustan los animales, hay animales en el jardin sabias eso, yo tengo un cabrito tierno, por siento, el es jugueton, me encantan los animales que juegan conmigo</p>
+              </div>
+              <div class="hermano-img-hijo">
+                <button>Ver mas</button>
+              </div>
             </div>
-           </div>
+          </div>
+        </div>
+      </div>
 
 
-
-
-           <div id="myModal2" class="modal">
-            <div class="modalContent">
-
-                <div class="close-btn">
-                    <a class="modal_close" href="">&times;</a>
-                </div>
-                <h2>Escoba W</h2>
-                <!-- <p>Escoba super suabe muy util para baldosas ya que es de alta calidad</p> -->
-                <div class="modal-img">
-                    <img src="IMG20251011205405.png">
-                    <h2>Escoba W de alta calidad</h2>
-                    <p>Especificaciones del producto:<br>
-                        1.Escoba suave si<br>
-                        2.Fibra fina si<br>
-                        3.Duradera si
-                    </p>
-                    <h2>Contactar</h2>
-                    <form action="https://formsubmit.co/andyme1647@gmail.com" method="POST">
-                    <input type="text" name="nombre" required placeholder="Tu nombre" class="campo">
-                    <input type="text"  name="apellido" required placeholder="Apellido" class="campo">
-                    <input type="number" name="cel" required placeholder="numero cel" class="campo">
-                    <input type="email" name="email" required placeholder="Tu email" class="campo"> 
-                    <textarea name="asunto" class="asunto">Mensaje</textarea>
-                    <button type="submit" class="enviar">Enviar</button>
-                    <input type="hidden" name="_next" value="https://andy-1647.github.io/">
-                    <input type="hidden" name="_captcha" value="false">
-                </form>
-                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ox7WSYmAm5A?si=QiOeKTm1rZEMhERk&amp;start=13" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-                </div>
+      
+      <div class="contenedor-mediano">
+        <h2>Contenedor mediano</h2>
+        <div class="contenedor-targeta">
+          <div class="targeta">
+            <img  class="img" src="https://images.pexels.com/photos/28593792/pexels-photo-28593792.jpeg">
+            <div class="hermano-img">
+              <div>
+                <h3>La foto del niño</h3>
+                <p class="p-img">Una foto de un niño que ele gustan los animales, hay animales en el jardin sabias eso, yo tengo un cabrito tierno, por siento, el es jugueton, me encantan los animales que juegan conmigo</p>
+              </div>
+              <div class="hermano-img-hijo">
+                <button>Ver mas</button>
+              </div>
             </div>
-           </div>
+          </div>
+        </div>
+      </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-           <div id="myModal3" class="modal">
-            <div class="modalContent">
-
-                <div class="close-btn">
-                    <a class="modal_close" href="">&times;</a>
-                </div>
-                <h2>Escoba W</h2>
-                <!-- <p>Escoba super suabe muy util para baldosas ya que es de alta calidad</p> -->
-                <div class="modal-img">
-                    <img src="IMG20251011205405.png">
-                    <h2>Escoba W de alta calidad</h2>
-                    <p>Especificaciones del producto:<br>
-                        1.Escoba suave si<br>
-                        2.Fibra fina si<br>
-                        3.Duradera si
-                    </p>
-                    <h2>Contactar</h2>
-                    <form action="https://formsubmit.co/andyme1647@gmail.com" method="POST">
-                    <input type="text" name="nombre" required placeholder="Tu nombre" class="campo">
-                    <input type="text"  name="apellido" required placeholder="Apellido" class="campo">
-                    <input type="number" name="cel" required placeholder="numero cel" class="campo">
-                    <input type="email" name="email" required placeholder="Tu email" class="campo"> 
-                    <textarea name="asunto" class="asunto">Mensaje</textarea>
-                    <button type="submit" class="enviar">Enviar</button>
-                    <input type="hidden" name="_next" value="https://andy-1647.github.io/">
-                    <input type="hidden" name="_captcha" value="false">
-                </form>
-                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ox7WSYmAm5A?si=QiOeKTm1rZEMhERk&amp;start=13" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-                </div>
+      
+      <div class="contenedor-pequeño">
+        <h2>Contenedor pequeño</h2>
+        <div class="contenedor-targeta">
+          <div class="targeta">
+            <img  class="img" src="https://images.pexels.com/photos/28593792/pexels-photo-28593792.jpeg">
+            <div class="hermano-img">
+              <div class="hermano-img-hijo">
+                <h3>La foto del niño</h3>
+                <p class="p-img">Una foto de un niño que ele gustan los animales, hay animales en el jardin sabias eso, yo tengo un cabrito tierno, por siento, el es jugueton, me encantan los animales que juegan conmigo</p>
+              </div>
+              <div class="hermano-img-hijo">
+                <button>Ver mas</button>
+              </div>
             </div>
-           </div>
+          </div>
+        </div>
+      </div>
 
-
-
-
-
-
-
-
-
-
-
-
-            <div id="myModal4" class="modal">
-            <div class="modalContent">
-
-                <div class="close-btn">
-                    <a class="modal_close" href="">&times;</a>
-                </div>
-                <h2>Trapero de Micro fibra</h2>
-                <!-- <p>Escoba super suabe muy util para baldosas ya que es de alta calidad</p> -->
-                <div class="modal-img">
-                    <img src="IMG20251011203807.png">
-                    <h2>TRapero de micro fibra de alta calidad</h2>
-                    <p>Especificaciones del producto:<br>
-                        1.Trapero de micro fibra si<br>
-                        2.Fibra fina si<br>
-                        3.Duradero si
-                    </p>
-                    <h2>Contactar</h2>
-                    <form action="https://formsubmit.co/andyme1647@gmail.com" method="POST">
-                    <input type="text" name="nombre" required placeholder="Tu nombre" class="campo">
-                    <input type="text"  name="apellido" required placeholder="Apellido" class="campo">
-                    <input type="number" name="cel" required placeholder="numero cel" class="campo">
-                    <input type="email" name="email" required placeholder="Tu email" class="campo"> 
-                    <textarea name="asunto" class="asunto">Mensaje</textarea>
-                    <button type="submit" class="enviar">Enviar</button>
-                    <input type="hidden" name="_next" value="https://andy-1647.github.io/">
-                    <input type="hidden" name="_captcha" value="false">
-                </form>
-                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ox7WSYmAm5A?si=QiOeKTm1rZEMhERk&amp;start=13" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-                </div>
-            </div>
-           </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-           <div id="myModal5" class="modal">
-            <div class="modalContent">
-
-                <div class="close-btn">
-                    <a class="modal_close" href="">&times;</a>
-                </div>
-                <h2>Trapero magico</h2>
-                <!-- <p>Escoba super suabe muy util para baldosas ya que es de alta calidad</p> -->
-                <div class="modal-img">
-                    <img src="IMG20251011195557.png">
-                    <h2>Trapero magico de alta calidad</h2>
-                    <p>Especificaciones del producto:<br>
-                        1.Trapero magico si<br>
-                        2.Fibra fina si<br>
-                        3.Duradero si
-                    </p>
-                    <h2>Contactar</h2>
-                    <form action="https://formsubmit.co/andyme1647@gmail.com" method="POST">
-                    <input type="text" name="nombre" required placeholder="Tu nombre" class="campo">
-                    <input type="text"  name="apellido" required placeholder="Apellido" class="campo">
-                    <input type="number" name="cel" required placeholder="numero cel" class="campo">
-                    <input type="email" name="email" required placeholder="Tu email" class="campo"> 
-                    <textarea name="asunto" class="asunto">Mensaje</textarea>
-                    <button type="submit" class="enviar">Enviar</button>
-                    <input type="hidden" name="_next" value="https://andy-1647.github.io/">
-                    <input type="hidden" name="_captcha" value="false">
-                </form>
-                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ox7WSYmAm5A?si=QiOeKTm1rZEMhERk&amp;start=13" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-                </div>
-            </div>
-           </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <div id="myModal6" class="modal">
-            <div class="modalContent">
-
-                <div class="close-btn">
-                    <a class="modal_close" href="">&times;</a>
-                </div>
-                <h2>Balde exprimidor</h2>
-                <!-- <p>Escoba super suabe muy util para baldosas ya que es de alta calidad</p> -->
-                <div class="modal-img">
-                    <img src="IMG20251004094830 - copia (2).jpg">
-                    <h2>Balde exprimidor</h2>
-                    <p>Especificaciones del producto:<br>
-                        1.Balde exprimidor de alta calidad<br>
-                        2.Exprime facil y rapido<br>
-                        3.Tiene palanca para esxprimir si
-                    </p>
-                    <h2>Contactar</h2>
-                    <form action="https://formsubmit.co/andyme1647@gmail.com" method="POST">
-                    <input type="text" name="nombre" required placeholder="Tu nombre" class="campo">
-                    <input type="text"  name="apellido" required placeholder="Apellido" class="campo">
-                    <input type="number" name="cel" required placeholder="numero cel" class="campo">
-                    <input type="email" name="email" required placeholder="Tu email" class="campo"> 
-                    <textarea name="asunto" class="asunto">Mensaje</textarea>
-                    <button type="submit" class="enviar">Enviar</button>
-                    <input type="hidden" name="_next" value="https://andy-1647.github.io/">
-                    <input type="hidden" name="_captcha" value="false">
-                </form>
-                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ox7WSYmAm5A?si=QiOeKTm1rZEMhERk&amp;start=13" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-                </div>
-            </div>
-           </div>
-
-
-
-
-
-
-
-
-
-
-
-
-           <div id="myModal7" class="modal">
-            <div class="modalContent">
-
-                <div class="close-btn">
-                    <a class="modal_close" href="">&times;</a>
-                </div>
-                <h2>Abana</h2>
-                <!-- <p>Escoba super suabe muy util para baldosas ya que es de alta calidad</p> -->
-                <div class="modal-img">
-                    <img src="IMG20251011204237 (1).png">
-                    <h2>Escoba abana</h2>
-                    <p>Especificaciones del producto:<br>
-                        1.Escoba suave si<br>
-                        2.Fibra fina si<br>
-                        3.Duradera si
-                    </p>
-                    <h2>Contactar</h2>
-                    <form action="https://formsubmit.co/andyme1647@gmail.com" method="POST">
-                    <input type="text" name="nombre" required placeholder="Tu nombre" class="campo">
-                    <input type="text"  name="apellido" required placeholder="Apellido" class="campo">
-                    <input type="number" name="cel" required placeholder="numero cel" class="campo">
-                    <input type="email" name="email" required placeholder="Tu email" class="campo"> 
-                    <textarea name="asunto" class="asunto">Mensaje</textarea>
-                    <button type="submit" class="enviar">Enviar</button>
-                    <input type="hidden" name="_next" value="https://andy-1647.github.io/">
-                    <input type="hidden" name="_captcha" value="false">
-                </form>
-                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ox7WSYmAm5A?si=QiOeKTm1rZEMhERk&amp;start=13" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-                </div>
-            </div>
-           </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <div id="myModal8" class="modal">
-            <div class="modalContent">
-
-                <div class="close-btn">
-                    <a class="modal_close" href="">&times;</a>
-                </div>
-                <h2>Plumero</h2>
-                <!-- <p>Escoba super suabe muy util para baldosas ya que es de alta calidad</p> -->
-                <div class="modal-img">
-                    <img src="IMG20251011220749.png">
-                    <h2>Plumero de micro fibra</h2>
-                    <p>Especificaciones del producto:<br>
-                        1.Plumero  de micro fibra si<br>
-                        2.Fibra fina si<br>
-                        3.Duradera si
-                        4. Excelente sacudidor
-                    </p>
-                    <h2>Contactar</h2>
-                    <form action="https://formsubmit.co/andyme1647@gmail.com" method="POST">
-                    <input type="text" name="nombre" required placeholder="Tu nombre" class="campo">
-                    <input type="text"  name="apellido" required placeholder="Apellido" class="campo">
-                    <input type="number" name="cel" required placeholder="numero cel" class="campo">
-                    <input type="email" name="email" required placeholder="Tu email" class="campo"> 
-                    <textarea name="asunto" class="asunto">Mensaje</textarea>
-                    <button type="submit" class="enviar">Enviar</button>
-                    <input type="hidden" name="_next" value="https://andy-1647.github.io/">
-                    <input type="hidden" name="_captcha" value="false">
-                </form>
-                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ox7WSYmAm5A?si=QiOeKTm1rZEMhERk&amp;start=13" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-                </div>
-            </div>
-           </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </footer>
-    
-    
     </div>
 
-    <script src="script.js"></script>
-     
+    <aside class="aside"> 
+      <a>Enlace 1</a>
+      <a>Enlace 2</a>
+      <a>Enlace 3</a>
+      <a>Enlace 4</a>
+    </aside>
+    <div class="padreMapas">
+      <h2>Como llegar</h2>
+      <div class="mapas">
+      <iframe src="https://www.google.com/maps/embed?pb=!4v1773854270228!6m8!1m7!1sVTzN9MQn01e7Et-N7TSR5g!2m2!1d3.393937657457065!2d-76.54934408626656!3f163.69295!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.820938719559!2d-76.55189402596605!3d3.393847651601665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a3e2a47074e3%3A0xbfb4123adcd92412!2sCra.%2070%20%233-04%2C%20Buenos%20Aires%2C%20Cali%2C%20Valle%20del%20Cauca!5e0!3m2!1ses!2sco!4v1773855040220!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="enlaceMapa"><a href="https://maps.app.goo.gl/7gtaFt7o5y3DDKjf9">Ir a la ubicacion</a></div>
+    </div>
+
+    </div>
+    
+    <div class="contenedor-chat">
+      <i class="fa-brands fa-whatsapp" style="color: rgb(99, 230, 190);"></i>
+    </div>
+    <footer class="footer_pagina">
+      <h2>Visitanos en nuestras redes sociales</h2>
+    
+       <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i>facebook</a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i>Instagran</a>
+            <a href="https://www.youtube.com"> <i class="fa-brands fa-youtube"></i>Youtube</a>
+
+      <h2>Contactanos</h2>
+
+      <li><a href="mainContacto.html"><i class="fa-solid fa-briefcase"></i>Contacto</a></li>
+
+      
+    </footer>
+    <script>
+    const pista = document.querySelector('.pista');
+    const diapositivas = Array.from(pista.children);
+    const botonAnterior = document.querySelector('.boton-carrusel.anterior');
+    const botonSiguiente = document.querySelector('.boton-carrusel.siguiente');
+
+    let indiceActual = 0;
+    const anchoDiapositiva = diapositivas[0].getBoundingClientRect().width;
+
+    function moverADiapositiva(indice) {
+      pista.style.transform = `translateX(-${anchoDiapositiva * indice}px)`;
+      indiceActual = indice;
+    }
+
+    function siguienteDiapositiva() {
+      if (indiceActual === diapositivas.length - 1) {
+        moverADiapositiva(0);
+      } else {
+        moverADiapositiva(indiceActual + 1);
+      }
+    }
+
+    function anteriorDiapositiva() {
+      if (indiceActual === 0) {
+        moverADiapositiva(diapositivas.length - 1);
+      } else {
+        moverADiapositiva(indiceActual - 1);
+      }
+    }
+
+    botonSiguiente.addEventListener('click', siguienteDiapositiva);
+    botonAnterior.addEventListener('click', anteriorDiapositiva);
+
+    setInterval(siguienteDiapositiva, 3000);
+  </script>
     
 </body>
 </html>
