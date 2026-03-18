@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios - Empresa de Escobas</title>
+  <style>
+    :root {
+      --primary-color: #27ae60;
+      --primary-dark: #219150;
+      --bg-color: #f4f6f8;
+      --white: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: #2c3e50;
+    }
+
+    .services-section {
+      padding: 60px 20px;
+      text-align: center;
+      background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: 1;
+    }
+
+    .services-content {
+      position: relative;
+      z-index: 2;
+      max-width: 1100px;
+      margin: auto;
+      color: var(--white);
+    }
+
+    .services-content h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: var(--primary-color);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { color: var(--primary-color); }
+      50% { color: var(--primary-dark); }
+      100% { color: var(--primary-color); }
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(4px);
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+      cursor: pointer;
+    }
+
+    .service-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .service-card h3 {
+      margin-bottom: 10px;
+      color: var(--primary-color);
+    }
+
+    .service-card p {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <section class="services-section" id="services">
+    <div class="overlay"></div>
+    <div class="services-content">
+      <h2>🧹 Nuestros Servicios</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Fabricación de Escobas Personalizadas</h3>
+          <p>Diseñamos escobas adaptadas a las necesidades de cada cliente, desde modelos industriales hasta versiones ligeras para el hogar.</p>
+        </div>
+        <div class="service-card">
+          <h3>Distribución Mayorista</h3>
+          <p>Venta al por mayor para supermercados, ferreterías y empresas de limpieza, con precios competitivos y entregas puntuales.</p>
+        </div>
+        <div class="service-card">
+          <h3>Escobas Ecológicas</h3>
+          <p>Producción de escobas hechas con materiales reciclados y fibras naturales, ideales para clientes comprometidos con el medio ambiente.</p>
+        </div>
+        <div class="service-card">
+          <h3>Mantenimiento y Reemplazo</h3>
+          <p>Programa de mantenimiento para empresas de aseo: revisamos y reemplazamos escobas desgastadas por nuevas.</p>
+        </div>
+        <div class="service-card">
+          <h3>Asesoría en Limpieza</h3>
+          <p>Consultoría para recomendar el tipo de escoba más adecuado según el espacio, tipo de piso y frecuencia de uso.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Animación secuencial al cargar
+    document.addEventListener("DOMContentLoaded", () => {
+      const cards = document.querySelectorAll(".service-card");
+      cards.forEach((card, index) => {
+        setTimeout(() => {
+          card.classList.add("visible");
+        }, 300 * index);
+      });
+    });
+  </script>
+
+</body>
+</html>
