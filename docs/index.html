@@ -4,258 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UI</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="main2.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            flex-wrap: wrap;
+            
+        }
+        header{
+            display: flex;
+            background-color: black;
+            width: 100%;
+        }
+        nav{
+            display: flex;
+            width: 100%;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            width: 100%;
+            gap: 3px;
+        }
+        li{
+            background-color: brown;
+            padding: 10px;
+        }
+        main{
+            display: flex;
+            width: 100%;
+            background-color: cornflowerblue;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        section{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            
+            gap: 5px;
+        }
+        article{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+            max-height: 450px;
+            background-color: mediumseagreen;
+            max-width: 300px;
+            border: 1px solid red;
+            border-radius: 10px;
+        }
+        img{
+            display: flex;
+            width: 70%;
+            object-fit: cover/center;
+            border-radius: 10px;
+        }
+        @media(max-width: 700px){
+            section{
+                grid-template-columns: 1fr;
+
+            }
+            article{
+                width: 100%;
+            }
+
+        }
+    </style>
 </head>
-<body> 
+<body>
     <header>
-        <div>
-            <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i>facebook</a>
-            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i>Instagran</a>
-            <a href="https://www.youtube.com"> <i class="fa-brands fa-youtube"></i>Youtube</a>
-        </div>
         <nav>
             <ul>
-                <li><a href="##"><i class="fa-regular fa-house"></i>Inicio</a></li>
-                <!-- <li><a href="##"><i class="fa-solid fa-users"></i>Nosotros</a></li> -->
-                <li><a href="mainServicios.html"><i class="fa-solid fa-suitcase"></i>Servicios</a></li>
-                <!-- <li><a href="##"><i class="fa-solid fa-briefcase"></i>Portafolio</a></li> -->
-                <li><a href="mainContacto.html"><i class="fa-solid fa-briefcase"></i>Contacto</a></li>
-
-
+                <li><a>Unos</a></li>
+                 <li><a>Dosssss</a></li>
+                  <li><a>Tresss</a></li>
             </ul>
         </nav>
     </header>
-    <div class="carrusel">
-    <div class="pista">
-      <div class="slide">
-        <img src="IMG20251011195557.png" alt="Imagen 1">
-        <div class="texto-slide">Trapero mopa</div>
-      </div>
-      <div class="slide">
-        <img src="IMG20251011195557.png" alt="Imagen 2">
-        <div class="texto-slide">Trapero mopa</div>
-      </div>
-      <div class="slide">
-        <img src="IMG20251011195557.png" alt="Imagen 3">
-        <div class="texto-slide">Trapero mopa</div>
-      </div>
-      <div class="slide">
-        <img src="IMG20251011195557.png" alt="Imagen 4">
-        <div class="texto-slide">Trapero mopa</div>
-      </div>
-      <div class="slide">
-        <img src="IMG20251011195557.png" alt="Imagen 5">
-        <div class="texto-slide">Trapero mopa</div>
-      </div>
-      <!-- Puedes seguir agregando más slides con texto -->
-    </div>
-    <button class="boton-carrusel anterior">&#10094;</button> 
-    <button class="boton-carrusel siguiente">&#10095;</button>
-  </div>
-  <div class="vacio"></div>
-  
-
     <main>
-      <!-- <h1 class="nombreh1">Mundo Aseo</h1> -->
-      <!-- <h2 class="nombreh2">Catalogo</h2> -->
-        <section class="catalogo">
+        <section>
+             <article>
+                <img src="IMG20251011181836.png">
+                <h3>Plumero</h3>
+                <p>Conoce nuestro plumero de alta calidad dfdfdf fdfdfd</p>
+                <button>Ver mas</button>
+            </article>
+
             <article>
                 <img src="IMG20251011181836.png">
                 <h3>Plumero</h3>
                 <p>Conoce nuestro plumero de alta calidad dfdfdf fdfdfd</p>
                 <button>Ver mas</button>
             </article>
-             <article>
-                <img src="IMG20251011181836.png">
-                <h3>Plumero</h3>
-                <p>Conoce nuestro plumero de alta calidad</p>
-                <button>Ver mas</button>
-            </article>
-             <article>
-                <img src="IMG20251011181836.png">
-                <h3>Plumero</h3>
-                <p>Conoce nuestro plumero de alta calidad</p>
-                <button>Ver mas</button>
-            </article>
-             <article>
-                <img src="IMG20251011181836.png">
-                <h3>Plumero</h3>
-                <p>Conoce nuestro plumero de alta calidad</p>
-                <button>Ver mas</button>
-            </article>
-             <article>
-                <img src="IMG20251011181836.png">
-                <h3>Plumero</h3>
-                <p>Conoce nuestro plumero de alta calidad</p>
-                <button>Ver mas</button>
-            </article>
-             <article>
-                <img src="IMG20251011181836.png">
-                <h3>Plumero</h3>
-                <p>Conoce nuestro plumero de alta calidad</p>
-                <button>Ver mas</button>
-            </article>
-             <article>
-                <img src="IMG20251011181836.png">
-                <h3>Plumero</h3>
-                <p>Conoce nuestro plumero de alta calidad</p>
-                <button>Ver mas</button>
-            </article>
-             <article>
-                <img src="IMG20251011181836.png">
-                <h3>Plumero</h3>
-                <p>Conoce nuestro plumero de alta calidad</p>
-                <button>Ver mas</button>
-            </article>
-             <article>
-                <img src="IMG20251011181836.png">
-                <h3>Plumero</h3>
-                <p>Conoce nuestro plumero de alta calidad</p>
-                <button>Ver mas</button>
-            </article>
-            
 
+            <article>
+                <img src="IMG20251011181836.png">
+                <h3>Plumero</h3>
+                <p>Conoce nuestro plumero de alta calidad dfdfdf fdfdfd</p>
+                <button>Ver mas</button>
+            </article>
+
+            <article>
+                <img src="IMG20251011181836.png">
+                <h3>Plumero</h3>
+                <p>Conoce nuestro plumero de alta calidad dfdfdf fdfdfd</p>
+                <button>Ver mas</button>
+            </article>
+            <article>
+                <img src="IMG20251011181836.png">
+                <h3>Plumero</h3>
+                <p>Conoce nuestro plumero de alta calidad dfdfdf fdfdfd</p>
+                <button>Ver mas</button>
+            </article>
+            <article>
+                <img src="IMG20251011181836.png">
+                <h3>Plumero</h3>
+                <p>Conoce nuestro plumero de alta calidad dfdfdf fdfdfd</p>
+                <button>Ver mas</button>
+            </article>
         </section>
     </main>
-    <h2 class="servicios">Servicios</h2>
-    <div class="contenedor-abuelo">
-      
 
-      
-      <div class="contenedor-grande">
-        <h2>Contenedor grande</h2>
-        <div class="contenedor-targeta">
-          <div class="targeta">
-            <img  class="img" src="https://images.pexels.com/photos/28593792/pexels-photo-28593792.jpeg">
-            <div class="hermano-img">
-              <div>
-                <h3 class="title-h3">La foto del niño</h3>
-                <p class="p-img">Una foto de un niño que ele gustan los animales, hay animales en el jardin sabias eso, yo tengo un cabrito tierno, por siento, el es jugueton, me encantan los animales que juegan conmigo</p>
-              </div>
-              <div class="hermano-img-hijo">
-                <button>Ver mas</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-
-
-      
-      <div class="contenedor-mediano">
-        <h2>Contenedor mediano</h2>
-        <div class="contenedor-targeta">
-          <div class="targeta">
-            <img  class="img" src="https://images.pexels.com/photos/28593792/pexels-photo-28593792.jpeg">
-            <div class="hermano-img">
-              <div>
-                <h3>La foto del niño</h3>
-                <p class="p-img">Una foto de un niño que ele gustan los animales, hay animales en el jardin sabias eso, yo tengo un cabrito tierno, por siento, el es jugueton, me encantan los animales que juegan conmigo</p>
-              </div>
-              <div class="hermano-img-hijo">
-                <button>Ver mas</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      
-      <div class="contenedor-pequeño">
-        <h2>Contenedor pequeño</h2>
-        <div class="contenedor-targeta">
-          <div class="targeta">
-            <img  class="img" src="https://images.pexels.com/photos/28593792/pexels-photo-28593792.jpeg">
-            <div class="hermano-img">
-              <div class="hermano-img-hijo">
-                <h3>La foto del niño</h3>
-                <p class="p-img">Una foto de un niño que ele gustan los animales, hay animales en el jardin sabias eso, yo tengo un cabrito tierno, por siento, el es jugueton, me encantan los animales que juegan conmigo</p>
-              </div>
-              <div class="hermano-img-hijo">
-                <button>Ver mas</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <aside class="aside"> 
-      <a>Enlace 1</a>
-      <a>Enlace 2</a>
-      <a>Enlace 3</a>
-      <a>Enlace 4</a>
-    </aside>
-    
-    <div class="padreMapas">
-      <h2>Como llegar</h2>
-      <div class="mapas">
-      <iframe src="https://www.google.com/maps/embed?pb=!4v1773854270228!6m8!1m7!1sVTzN9MQn01e7Et-N7TSR5g!2m2!1d3.393937657457065!2d-76.54934408626656!3f163.69295!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.820938719559!2d-76.55189402596605!3d3.393847651601665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a3e2a47074e3%3A0xbfb4123adcd92412!2sCra.%2070%20%233-04%2C%20Buenos%20Aires%2C%20Cali%2C%20Valle%20del%20Cauca!5e0!3m2!1ses!2sco!4v1773855040220!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <div class="enlaceMapa"><a href="https://maps.app.goo.gl/7gtaFt7o5y3DDKjf9">Ir a la ubicacion</a></div>
-    </div>
-
-    </div>
-    
-    <div class="contenedor-chat">
-      <i class="fa-brands fa-whatsapp" style="color: rgb(99, 230, 190);"></i>
-    </div>
-    <footer class="footer_pagina">
-      <h2>Visitanos en nuestras redes sociales</h2>
-    
-       <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i>facebook</a>
-            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i>Instagran</a>
-            <a href="https://www.youtube.com"> <i class="fa-brands fa-youtube"></i>Youtube</a>
-
-      <h2>Contactanos</h2>
-
-      <li><a href="mainContacto.html"><i class="fa-solid fa-briefcase"></i>Contacto</a></li>
-
-      
-    </footer>
-
-
-    <script>
-    const pista = document.querySelector('.pista');
-    const diapositivas = Array.from(pista.children);
-    const botonAnterior = document.querySelector('.boton-carrusel.anterior');
-    const botonSiguiente = document.querySelector('.boton-carrusel.siguiente');
-
-    let indiceActual = 0;
-    const anchoDiapositiva = diapositivas[0].getBoundingClientRect().width;
-
-    function moverADiapositiva(indice) {
-      pista.style.transform = `translateX(-${anchoDiapositiva * indice}px)`;
-      indiceActual = indice;
-    }
-
-    function siguienteDiapositiva() {
-      if (indiceActual === diapositivas.length - 1) {
-        moverADiapositiva(0);
-      } else {
-        moverADiapositiva(indiceActual + 1);
-      }
-    }
-
-    function anteriorDiapositiva() {
-      if (indiceActual === 0) {
-        moverADiapositiva(diapositivas.length - 1);
-      } else {
-        moverADiapositiva(indiceActual - 1);
-      }
-    }
-
-    botonSiguiente.addEventListener('click', siguienteDiapositiva);
-    botonAnterior.addEventListener('click', anteriorDiapositiva);
-
-    setInterval(siguienteDiapositiva, 3000);
-
-
-  </script>
     
 </body>
 </html>
