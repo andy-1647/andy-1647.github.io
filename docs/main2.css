@@ -13,6 +13,10 @@ body{
    /* background: radial-gradient(circle,    oklch(0.5467 0.1899 306.53), oklch(0.7 0.1949 147.71),  oklch(0.7397 0.1825 149.82),oklch(0.5467 0.2491 315)); */
    background: radial-gradient(circle, oklch(44.852% 0.21962 313.642));
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
 
 }
 @property --color-fondo {
