@@ -40,8 +40,8 @@ header{
     padding: 10px ;
     display: flex;
     flex-direction: column;
-     margin: 0 !important;
-    padding: 0 !important;
+     /* margin: 0 !important; */
+    /* padding: 0 !important; */
     max-width: 100%;
     overflow-x: hidden;
     /* background-color: chartreuse; */
