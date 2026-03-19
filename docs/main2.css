@@ -192,11 +192,11 @@ ul li a:hover{
       border-radius: 50%;
     }
 
-    .boton-carrusel .anterior {
+    .boton-carrusel.anterior {
       left: 10px;
     }
 
-    .boton-carrusel .siguiente {
+    .boton-carrusel.siguiente {
       right: 10px;
     }
 
