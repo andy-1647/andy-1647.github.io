@@ -17,6 +17,7 @@ body{
     justify-content: center;
     align-items: center;
     justify-items: center;
+    max-width: 100%;
 
 }
 @property --color-fondo {
