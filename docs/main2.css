@@ -428,7 +428,7 @@ img{
         position: relative;
         right: right;
         height: 100px;
-        /* width: 100%; */
+        width: 100%;
         min-width:  12rem;
         padding: 15px;
         top: auto;
@@ -455,7 +455,7 @@ img{
     color: white;
 }
 .contenedor-chat{
-    position: relative;
+    position: fixed;
     top: 350px;
     right: .1px;
     z-index: 1000px;
