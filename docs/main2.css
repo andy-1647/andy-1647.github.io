@@ -12,6 +12,7 @@ body{
     /* background: radial-gradient(circle, oklch(0.7 0.1 147), oklch(0.7 0.1258 50.29), oklch(0.7 0.1381 273.71), oklch(0.7 0.2047 311.82), oklch(0.7 0.1727 354.18), oklch(0.8603 0.2097 137.12), oklch(0.7074 0.1801 351), oklch(0.7074 0.1677 327.71), oklch(0.7074 0.1603 52.41), oklch(0.7074 0.1233 132.88), oklch(0.7074 0.1899 162.53), oklch(0.5467 0.1899 306.53), oklch(0.5467 0.2491 315), oklch(0.5467 0.2097 27), oklch(0.5467 0.2269 27)); */
    /* background: radial-gradient(circle,    oklch(0.5467 0.1899 306.53), oklch(0.7 0.1949 147.71),  oklch(0.7397 0.1825 149.82),oklch(0.5467 0.2491 315)); */
    background: radial-gradient(circle, oklch(44.852% 0.21962 313.642));
+    display: flex;
 
 }
 @property --color-fondo {
