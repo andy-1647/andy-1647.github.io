@@ -141,7 +141,7 @@ ul li a:hover{
     }
 @media(max-width: 500px){
     .carrusel{
-        margin-left: 160px;
+        /* margin-left: 160px; */
     }
 }
 
