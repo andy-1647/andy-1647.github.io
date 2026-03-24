@@ -136,19 +136,34 @@
             object-fit: cover/center;
             border-radius: 10px;
         }
-
+        .modal{
+            background-color: red;
+        }
         
         .contenedor-abuelo{
+            position: absolute;
             width: 100%;
             height: 100%;
-            margin-top: 1rem;
-            display: flex;
+            margin-top: 20rem;
+            display: none;
             flex-wrap: wrap;
             gap: 10px;
             justify-content: center;
             margin-bottom: 3rem;
             border-radius: 30px;
             background: radial-gradient(circle at center, oklch(0.7 0.1431 285.35), oklch(0.7 0.0493 348.88),oklch(0.7 0.1924 355.24), oklch(0.7533 0.1924 329.82), oklch(0.7533 0.1727 137.12));
+        }
+        .cerrar-modal{
+            position: absolute;
+            font-size: 7rem;
+            padding: 0;
+            height: 0;
+            width: 0;
+            margin-left: 70rem;
+            z-index: 100;
+            cursor: pointer;
+            color: rgb(62, 95, 93);
+
         }
         .contenedor-grande{
             width: 500px;
@@ -212,9 +227,9 @@
     <header>
         <nav>
             <ul>
-                <li><a>Unos</a></li>
-                 <li><a>Dosssss</a></li>
-                  <li><a>Tresss</a></li>
+                <li><a>inicio</a></li>
+                <li><a>Contacto</a></li>
+                <li><a>Nosotros</a></li>
             </ul>
         </nav>
     </header>
@@ -271,14 +286,14 @@
                 <img src="IMG20251011181836.png">
                 <h3>Plumero</h3>
                 <p>Conoce nuestro plumero de alta calidad dfdfdf fdfdfd</p>
-                <button>Ver mas</button>
+                <button class="modal">Ver mas</button>
             </article>
 
             <article>
                 <img src="IMG20251011181836.png">
                 <h3>Plumero</h3>
                 <p>Conoce nuestro plumero de alta calidad dfdfdf fdfdfd</p>
-                <button>Ver mas</button>
+                <button class="modal">Ver mas</button>
             </article>
 
             <article>
@@ -309,6 +324,7 @@
         </section>
     </main>
     <div class="contenedor-abuelo">
+        <button class="cerrar-modal">&times</button>
         <div class="contenedor-grande">
             <div class="contenedor-targeta">
                 <div class="targeta">
@@ -366,6 +382,22 @@
         // botonSiguiente.addEventListener('click', siguienteDiapositiva);
         // botonAnterior.addEventListener('click', anteriorDiapositiva);
         setInterval(siguienteDiapositiva, 3000);
+
+
+        //Modal
+        const modal = document.querySelector('.modal')
+        const contenedorAbuelo = document.querySelector('.contenedor-abuelo')
+        const cerrarModal = document.querySelector('.cerrar-modal')
+
+        modal.addEventListener('click', (e)=>{
+            e.preventDefault()
+
+            contenedorAbuelo.style.display = 'flex';
+        })
+        cerrarModal.addEventListener('click', (e)=>{
+            e.preventDefault()
+            contenedorAbuelo.style.display = 'none'
+        })
 
 
 
