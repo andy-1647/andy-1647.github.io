@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros - Páginas Web Cali</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    section {
+      padding: 80px 20px;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-align: center;
+      animation: fadeInDown 1s ease;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+      animation: fadeIn 2s ease;
+    }
+
+    /* Historia */
+    .historia {
+      background: linear-gradient(135deg, #ff9966, #ff5e62);
+      color: #fff;
+      text-align: center;
+    }
+
+    .historia-contenedor {
+      max-width: 900px;
+      margin: auto;
+      text-align: left;
+    }
+
+    .historia-contenedor p {
+      margin-bottom: 20px;
+    }
+
+    /* Contacto */
+    .contacto {
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      color: #fff;
+      text-align: center;
+    }
+
+    .contacto p {
+      max-width: 700px;
+      margin: auto;
+      margin-bottom: 40px;
+    }
+
+    .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: #25D366;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 15px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .btn-whatsapp i {
+      font-size: 1.5rem;
+    }
+
+    .btn-whatsapp:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    /* Mapa */
+    .mapa {
+      margin-top: 40px;
+      border-radius: 10px;
+      overflow: hidden;
+      animation: fadeInUp 2s ease;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+    }
+
+    /* Animaciones */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .btn-whatsapp {
+        font-size: 1rem;
+        padding: 12px 24px;
+      }
+
+      .btn-whatsapp i {
+        font-size: 1.2rem;
+      }
+
+      iframe {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HISTORIA -->
+  <section class="historia" id="historia">
+    <h2>Nuestra Historia</h2>
+    <div class="historia-contenedor">
+      <p>
+        En el corazón de Cali, Valle del Cauca, nació nuestra pasión por el mundo digital. 
+        Comenzamos como un pequeño grupo de soñadores que creían que cada negocio merecía 
+        una presencia en línea que reflejara su esencia y potencial.
+      </p>
+      <p>
+        Con esfuerzo, creatividad y compromiso, hemos ayudado a emprendedores, empresas y 
+        profesionales a dar el salto al mundo digital. Hoy somos un equipo consolidado que 
+        transforma ideas en páginas web modernas, funcionales y atractivas.
+      </p>
+      <p>
+        Nuestra misión es clara: impulsar el crecimiento de los negocios caleños y del Valle 
+        del Cauca, llevando su marca al siguiente nivel con soluciones digitales innovadoras.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contacto" id="contacto">
+    <h2>Contáctanos</h2>
+    <p>
+      ¿Quieres una página web profesional para tu negocio en Cali, Valle del Cauca? 
+      Escríbenos directamente por WhatsApp y te asesoramos de inmediato.
+    </p>
+    <a href="https://wa.me/573001234567" target="_blank" class="btn-whatsapp">
+      <i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp
+    </a>
+
+    <!-- Mapa de Google -->
+    <div class="mapa">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.548768947!2d-76.532!3d3.4516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a6a5b9f0b1f1%3A0x123456789abcdef!2sCali%2C%20Valle%20del%20Cauca!5e0!3m2!1ses!2sco!4v1710000000000"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+</body>
+</html>
