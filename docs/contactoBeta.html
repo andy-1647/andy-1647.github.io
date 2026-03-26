@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Páginas Web Cali</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    .contacto {
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      color: #fff;
+      text-align: center;
+    }
+
+    .contacto h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      animation: fadeInDown 1s ease;
+    }
+
+    .contacto p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      animation: fadeIn 2s ease;
+    }
+
+    .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: #25D366;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 15px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .btn-whatsapp i {
+      font-size: 1.5rem;
+    }
+
+    .btn-whatsapp:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    /* Animaciones */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsivo */
+    @media (max-width: 600px) {
+      .contacto h2 {
+        font-size: 2rem;
+      }
+
+      .contacto p {
+        font-size: 1rem;
+      }
+
+      .btn-whatsapp {
+        font-size: 1rem;
+        padding: 12px 24px;
+      }
+
+      .btn-whatsapp i {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- CONTACTO -->
+  <section class="contacto" id="contacto">
+    <h2>Contáctanos</h2>
+    <p>
+      ¿Quieres una página web profesional para tu negocio en Cali, Valle del Cauca? 
+      Haz crecer tu presencia digital con nosotros. Escríbenos directamente por WhatsApp y te asesoramos.
+    </p>
+    <a href="https://wa.me/573001234567" target="_blank" class="btn-whatsapp">
+      <i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp
+    </a>
+  </section>
+</body>
+</html>
