@@ -210,16 +210,37 @@
             }
 
         }
-        @container targeta (max-width: 350px){
+         @container targeta (max-width: 650px){
             .targeta{
             flex-direction: row;
             flex-wrap: wrap;
             }
-           .targeta .img{
-           width: 70%;
+           .targeta img{
+           width: 80%;
+           height: 80vh;
            /* height: 40vh; */
            object-fit: cover;
            }
+        }
+        @container targeta (max-width: 360px){
+            .targeta img{
+                width: 70%;
+            }
+        }
+        @media(max-width: 700px){
+            .cerrar-modal{
+                margin-left: 20rem;
+                font-size: 3rem;
+                color: blue;
+            }
+            .contenedor-abuelo{
+                background-color: darkgoldenrod;
+            }
+        }
+        @media(max-width: 400px){
+            .cerrar-modal{
+                margin-left: 15rem;
+            }
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
