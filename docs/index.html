@@ -145,6 +145,41 @@
             margin-top: -4rem;
             border-bottom: 10px;
         }
+
+        .contenedor-a{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            width: 100%;
+            background-color: blueviolet;
+        }
+       .contenedor-g{
+            width: 500px;
+            padding: 1rem;
+            background-color: #e0e0e0;
+            border-radius: 8px;
+        }
+        .contenedor-t{
+            container-type: inline-size;
+            container-name: targeta2; 
+        }
+        .targetab{
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            background-color: blueviolet;
+
+        }
+        .targetab img{
+             width: 40%;
+            /* height: 40%; */
+            object-fit: cover;
+            aspect-ratio: 1.5 / 1;
+        }
+        .targetab h3, p{
+            display: flex;
+        }
         
         .contenedor-abuelo{
             transition: transform 7s ease-in-out;
@@ -161,6 +196,7 @@
             border-radius: 30px;
             background: radial-gradient(circle at center, oklch(0.7 0.1431 285.35), oklch(0.7 0.0493 348.88),oklch(0.7 0.1924 355.24), oklch(0.7533 0.1924 329.82), oklch(0.7533 0.1727 137.12));
         }
+        
         .cerrar-modal{
             position: absolute;
             font-size: 5rem;
@@ -199,8 +235,10 @@
         .aside{
             display: flex;
             background-color: crimson;
-            height: 30vh;
+            width: 12rem;
+            height: 30rem;
         }
+
         .ContenedorTargetasEnlaces{
             display: flex;
             flex-wrap: wrap;
@@ -287,16 +325,29 @@
             flex-wrap: wrap;
             }
            .targeta img{
-           width: 80%;
-           height: 80vh;
-           /* height: 40vh; */
-           object-fit: cover;
+             width: 80%;
+             height: 80vh;
+             /* height: 40vh; */
+             object-fit: cover;
            }
         }
         @container targeta (max-width: 360px){
             .targeta img{
                 width: 79%;
             }
+        }
+        
+        @container targeta2 (max-width: 499px){
+            .targetab{
+                flex-direction: column;
+                flex-wrap: wrap-reverse;
+            }
+            .targetab img{
+                width: 100%;
+            }
+
+
+            
         }
         @media(max-width: 800px){
             .cerrar-modal{
@@ -306,6 +357,10 @@
                 color: blue;
             }
             .contenedor-abuelo{
+                margin-top: 10rem;
+                background-color: darkgoldenrod;
+            }
+            .contenedor-a{
                 margin-top: 10rem;
                 background-color: darkgoldenrod;
             }
@@ -436,6 +491,71 @@
             </article>
         </section>
     </main>
+    <div class="contenedor-a">
+        <div class="contenedor-g">
+            <div class="contenedor-t">
+                <div class="targetab">
+                    <img src="https://images.pexels.com/photos/30220574/pexels-photo-30220574.jpeg">
+                    <div>
+                        <div class="div1">
+                            <h3>Card 1</h3>
+                            <p>
+                                🧽 Perfil del Asesor Comercial
+                                Nombre: Andrés Torres
+                                Cargo: Asesor Comercial de <br>Productos de Aseo
+                                Especialidad: Soluciones de <br>limpieza y atención al cliente
+                               📌 Sobre mí
+                               Soy asesor comercial
+                               💼 Servicios que ofrezco
+                               Asesoría en selección de productos de<br> 
+                               Atención personalizada para clientes<br>
+                               🎯
+                              📞 Contacto
+                              Correo: andres.torres@tiendadeaseo.com
+                              Teléfono: +57 315 654 3210
+                              WhatsApp: +57 315 654 3210
+                            </p>
+
+                        </div>
+                        <div class="div2">
+                            <button >Inicio</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="contenedor-g">
+            <div class="contenedor-t">
+                <div class="targetab">
+                    <img src="https://images.pexels.com/photos/28386750/pexels-photo-28386750.jpeg">
+                    <div>
+                        <div class="div1">
+                            <h3>Card 2</h3>
+                            <p>
+                                Perfil del Asesor Comercial<br>
+                                Nombre: Carlos Ramírez<br>
+                                Cargo: Asesor Comercial de Productos de Aseo<br>
+                                Especialidad: Atención personalizada y soluciones de limpieza para hogar y empresa<br>
+                              📌 Sobre mí
+                               Soy asesor comercial con amplia experiencia en el sector de productos de aseo. Mi misión es acompañar a cada cliente en la elección de artículos que garanticen limpieza, higiene y bienestar en sus espacios. Me caracterizo por brindar un servicio cercano, confiable y orientado a resolver las necesidades específicas de cada persona o empresa.
+                              💼 Servicios que ofrezco
+                             🎯 Misión
+                             Ofrecer soluciones prácticas y efectivas en productos de aseo, contribuyendo a espacios más limpios, saludables y agradables.
+                            📞 Contacto
+                            Correo: carlos.ramirez@tiendadeaseo.com
+                            Teléfono: +57 312 987 6543
+                            WhatsApp: +57 312 987 6543
+                            </p>
+
+                        </div>
+                        <div class="div2">
+                            <button >Inicio</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="contenedor-abuelo">
         <button class="cerrar-modal">&times</button>
         <div class="contenedor-grande">
@@ -580,6 +700,7 @@
             </div>
         </div>
     </div>
+    
     <aside class="aside">
         <section class="ContenedorTargetasEnlaces">
             <article class="targetaEnlace">
@@ -592,7 +713,7 @@
                 <a href="enlaceExtra.html">Enlace 1</a>
             </article>
         </section>
-    </aside>
+    </aside> 
     <footer class="footerDeLaPagina">
         <section class="ContenedorRedesSociales">
             <h3 class="enlaceRedesSociales tituloRedesSociales">Redes Sociales</h3> 
